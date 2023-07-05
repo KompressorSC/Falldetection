@@ -1,0 +1,26 @@
+<annotation>
+	<folder>new_images</folder>
+	<filename>fall_183.jpg</filename>
+	<path>D:\FallDataset_A\new_images\fall_183.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>208</width>
+		<height>117</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>fall</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>84</xmin>
+			<ymin>61</ymin>
+			<xmax>124</xmax>
+			<ymax>85</ymax>
+		</bndbox>
+	</object>
+</annotation>

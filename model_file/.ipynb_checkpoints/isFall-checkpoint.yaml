@@ -1,0 +1,4 @@
+train: /root/autodl-tmp/falldetection/data/v2/train.txt
+val: /root/autodl-tmp/falldetection/data/v2/val.txt
+nc: 1
+names: ["fall"]

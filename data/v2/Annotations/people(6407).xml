@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<annotation>
+		<folder>VOC2007</folder>
+		<filename>people(6407).jpg</filename>
+		<size>
+			<width>500</width>
+			<height>414</height>
+			<depth>3</depth>
+		</size>
+		<object>
+			<name>fall</name>
+			<pose>Unspecified</pose>
+			<truncated>0</truncated>
+			<difficult>0</difficult>
+			<bndbox>
+				<xmin>258</xmin>
+				<ymin>136</ymin>
+				<xmax>435</xmax>
+				<ymax>395</ymax>
+			</bndbox>
+		</object>
+	</annotation>
