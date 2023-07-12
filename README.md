@@ -1,6 +1,4 @@
 ## Falldetection_Group_2
-# 更新
-更换数据集为自己制作的版本，并用不同的lr下降率分别训练了三次，每次100个epoch。之前模型的召回率不高疑似过拟合导致。
 
 # 安装
 1、安装anaconda(推荐)或者python
@@ -24,10 +22,7 @@ pip install ultralytics
 ***
 yolo cfg=train.yaml
 ***
-3、验证
-***
-yolo cfg=val.yaml
-***
+
 # 查看结果
-结果存于当前目录的results下
+结果存于当前目录的results/train_*下
 
