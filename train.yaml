@@ -2,14 +2,14 @@
 # Default training settings and hyperparameters for medium-augmentation COCO training
 
 task: detect  # (str) YOLO task, i.e. detect, segment, classify, pose
-mode: train  # (str) YOLO mode, i.e. train, val, predict, export, track, benchmark
+mode: val  # (str) YOLO mode, i.e. train, val, predict, export, track, benchmark
 
 # Train settings -------------------------------------------------------------------------------------------------------
-model: /root/autodl-tmp/Falldetection/yolov8x.pt # (str, optional) path to model file, i.e. yolov8n.pt, yolov8n.yaml
+model: /root/autodl-tmp/Falldetection/results/train5/weights/best.pt # (str, optional) path to model file, i.e. yolov8n.pt, yolov8n.yaml
 data: /root/autodl-tmp/Falldetection/isFall.yaml # (str, optional) path to data file, i.e. coco128.yaml
 epochs: 100  # (int) number of epochs to train for
 patience: 50  # (int) epochs to wait for no observable improvement for early stopping of training
-batch: -1  # (int) number of images per batch (-1 for AutoBatch)
+batch: 8  # (int) number of images per batch (-1 for AutoBatch)
 imgsz: 640  # (int) size of input images as integer or w,h
 save: True  # (bool) save train checkpoints and predict results
 save_period: -1 # (int) Save checkpoint every x epochs (disabled if < 1)
@@ -80,7 +80,7 @@ nms: False  # (bool) CoreML: add NMS
 
 # Hyperparameters ------------------------------------------------------------------------------------------------------
 lr0: 0.01  # (float) initial learning rate (i.e. SGD=1E-2, Adam=1E-3)
-lrf: 0.0025  # (float) final learning rate (lr0 * lrf)
+lrf: 0.001  # (float) final learning rate (lr0 * lrf)
 momentum: 0.937  # (float) SGD momentum/Adam beta1
 weight_decay: 0.0005  # (float) optimizer weight decay 5e-4
 warmup_epochs: 3.0  # (float) warmup epochs (fractions ok)
